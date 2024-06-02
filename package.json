@@ -1,0 +1,26 @@
+{
+    "name": "envyman",
+    "version": "1.0.0",
+    "description": "Generate multiple .env files based on configuration",
+    "main": "",
+    "bin": {
+        "envyman": "./src/cli.js"
+    },
+    "files": [
+        "src/**/*"
+    ],
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "env",
+        ".env",
+        "monorepo"
+    ],
+    "author": "Alan Lins",
+    "license": "ISC",
+    "dependencies": {
+        "colors": "^1.4.0",
+        "yargs": "^17.7.2"
+    }
+}

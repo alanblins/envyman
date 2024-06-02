@@ -1,0 +1,32 @@
+{
+    "projectFolder": "./",
+    "extends":{
+        "stage-qa": "stage"
+    },
+    "environment_variables": [
+        {
+            "name": "Server URL",
+            "description": "Url of the web server",
+            "key": "SERVER_URL",
+            "source": "value",
+            "workspaces":{
+                "stage": "https://stage.myserver.com",
+                "local": "http://localhost:1000"
+            },
+            "paths": ["packages/app"]
+
+        },
+        {
+            "name": "Database URL",
+            "description": "Url of the database",
+            "key": "DATABASE_URL",
+            "source": "value",
+            "workspaces":{
+                "stage-qa": "https://database-qa.myserver.com",
+                "stage": "https://database.myserver.com",
+                "local": "http://localhost:2000"
+            },
+            "paths": ["packages/database"]
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "projectFolder": "./",
+    "environment_variables": [
+        {
+            "name": "Server URL",
+            "description": "Url of the web server",
+            "key": "SERVER_URL",
+            "source": "value",
+            "workspaces":{
+                "stage": "https://stage.myserver.com",
+                "local": "http://localhost:1000"
+            },
+            "paths": ["packages/app"]
+
+        },
+        {
+            "name": "Database URL",
+            "description": "Url of the database",
+            "key": "DATABASE_URL",
+            "source": "value",
+            "workspaces":{
+                "stage": "https://database.myserver.com",
+                "local": "http://localhost:2000"
+            },
+            "paths": ["packages/database"]
+        },
+        {
+            "name": "SDK of library",
+            "description": "SDK from some external library",
+            "key": "SDK",
+            "source": "user_file",
+            "workspaces":{
+                "stage": "SDK_PATH",
+                "local": "SDK_PATH"
+            },
+            "paths": ["packages/app"]
+        }
+    ]
+}
