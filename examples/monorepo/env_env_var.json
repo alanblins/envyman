@@ -25,13 +25,13 @@
             "paths": ["packages/database"]
         },
         {
-            "name": "http proxy",
-            "description": "http proxy",
-            "key": "HTTP_PROXY",
+            "name": "Java home",
+            "description": "Java home",
+            "key": "JAVA_HOME",
             "source": "env_var",
             "workspaces":{
-                "stage": "https://database.myserver.com",
-                "local": "http://localhost:2000"
+                "stage": "JAVA_HOME",
+                "local": "JAVA_HOME"
             },
             "paths": ["packages/app", "packages/database"]
         }

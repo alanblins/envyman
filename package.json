@@ -22,5 +22,9 @@
     "dependencies": {
         "colors": "^1.4.0",
         "yargs": "^17.7.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/alanblins/envyman.git"
     }
 }
