@@ -133,7 +133,7 @@ try{
 
 function filterSources(environment_variables){
     return environment_variables.filter( v=> 
-        ["user_file", "aes256-gcm", "value", "envVar"].includes(v.source)
+        ["user_file", "aes256-gcm", "value", "env_var"].includes(v.source)
     );
 }
 
